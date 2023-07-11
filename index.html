@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>OCBC DASHBOARD</title>
+
+        <!-- Montserrat Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+        <!-- Material Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="grid-container">
+
+            <!-- Header -->
+            <!--
+            <header class="header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-icons-outlined">menu</span>
+                </div>
+                <div class="header-left">
+                    <span class="material-icons-outlined">search</span>
+                </div>
+                <div class="header-right">
+                    <span class="material-icons-outlined">notifications</span>
+                    <span class="material-icons-outlined">email</span>
+                    <span class="material-icons-outlined">account_circle</span>
+                </div>
+            </header> -->
+            <!-- End Header-->
+
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand">
+                        <div class="logo">
+                            <img src="img/ocbc-bank.gif" alt="BANK">
+                        </div>
+                        <!-- <span class="material-icons-outlined">account_balance</span> OCBC BANK -->
+                    </div>
+                    <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+                </div>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <span class="material-icons-outlined">dashboard</span> DASHBOARD
+                    </li>
+                </ul>
+            </aside>
+            <!-- End  Sidebar-->
+
+            <!-- Main-->
+            <main class="main-container">
+                <div class="main-title">
+                    <p class="font-weight-bold">DASHBOARD</p>
+                </div>
+                <!--
+                <div class="main-cards">
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">PRODUCTS</p>
+                            <span class="material-icons-outlined text-blue">inventory_2</span>
+                        </div>
+                        <span class="text-primary font-weight-bold">249</span>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">PURCHASE ORDERS</p>
+                            <span class="material-icons-outlined text-orange">add_shopping_cart</span>
+                        </div>
+                        <span class="text-primary font-weight-bold">83</span>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">REGRESSION AUTOMATION EXECUTION</p>
+                           <span class="material-icons-outlined text-green">shopping_cart</span>
+                        </div>
+                        <span class="text-primary font-weight-bold">79</span>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">INVENTORY ALERTS</p>
+                            <span class="material-icons-outlined text-red">notification_important</span>
+                        </div>
+                        <span class="text-primary font-weight-bold">56</span>
+                    </div>
+                </div> -->
+
+                <div class="charts">
+                    <div class="charts-card">
+                        <p class="chart-title">Chart 1 - GWB Stream</p>
+                        <div id="bar-chart"></div>
+                    </div>
+                    <div class="charts-card">
+                        <p class="chart-title">Chart 1 - GWB Stream - MB-SG</p>
+                        <div id="area-chart"></div>
+                    </div>
+                </div>
+            </main>
+            <!-- End Main-->
+        </div>
+
+        <!-- Footer -->
+        <!--<footer>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><i class="fa fa-copyright"></i> Copyright 2023 by TTC</p>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+        <!-- End Footer-->
+
+        <!-- Scripts -->
+        <!-- Apex Charts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js"></script>
+        <!-- Custom JSS -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
